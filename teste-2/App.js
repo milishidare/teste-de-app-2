@@ -1,58 +1,38 @@
-
 import React from "react";
-import { Image, Text, View, StyleSheet} from 'react-native';
+import { Image, View, Text, StyleSheet} from 'react-native';
 
-import Jenie from './assets/jenie.png';
-import Rose from './assets/rose.png';
-import Lisa from './assets/lisa.png';
-import Jisoo from './assets/jisoo.png';
+import Capa from './assets/capa2.png'
  
-export default function App () {
- return ( 
-
+export default function App() {
+return (  
   <View style= {estilos.container}>
-<Text style= {estilos.titulo}> BLACKPINK</Text>
-
-<Image source={ Jenie} style={estilos.img}/>
-<Text style={ estilos.margem}> JENNIE </Text>
-<Image source={ Rose} style= { estilos.img}/>
-<Text style={ estilos.margem}>ROSÉ</Text>
-<Image source={Lisa } style={estilos.img}/>
-<Text style={estilos.margem}>LISA </Text>
-<Image source={Jisoo} style={ estilos.img}/>
-<Text style={estilos.margem}> JISOO</Text>
+    <Image source={Capa} style={estilos.img}/>
+<Text style= {estilos.texto}> by mili  </Text>
 
   </View>
 
 
- );
-
+);
 
 }
- const estilos= StyleSheet.create ({
+const estilos= StyleSheet.create ({
 container: {
-flex: 1,
-backgroundColor: 'pink',
-alignItems: 'center',
-justifyContent: 'center',
-
-  
-},
-titulo: {
-  fontSize: 22,
-  marginBottom: 30,
-  marginTop: 20,
-},
-margem: {
-  fontSize:10,
-  marginBottom:5,
+  flex: 1,
+  backgroundColor: '#ec2333',
+  alignItems: 'center',
+  justifyContent: 'center',
 
 },
 img: {
- marginBottom:10,
- marginTop: 5,
- height: 130,
- width: 130
- 
-} 
- } );
+marginBottom: 10,
+height: 150,
+width: 150,
+},
+texto: {
+  fontSize: 10,
+  color: 'white'
+}
+
+
+
+});
